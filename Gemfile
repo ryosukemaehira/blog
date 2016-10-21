@@ -26,6 +26,7 @@ gem 'pry-rails'
 gem 'erb2haml'
 gem 'haml-rails'
 gem 'qiita-markdown'
+gem 'dotenv-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
