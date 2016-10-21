@@ -1,0 +1,39 @@
+body {
+  font-size: 10px;
+}
+
+.container {
+  width: $break_point_lg;
+}
+
+.text-white {
+  color: #FFF;
+}
+
+.icon-left {
+  margin-left: $space_narrow;
+  text-align: left;
+  display: inline;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 3px lighten($main_color, 10%);
+  border-color: #ccc;
+}
+
+input, textarea {
+  color: #666;
+  font-size: 12px;
+  border: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
