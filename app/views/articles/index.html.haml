@@ -1,1 +1,7 @@
-mage
+%h1 まげぶろぐ
+= link_to "new", new_article_path
+- @articles.each do |article|
+  %h1
+    = article.title
+  = raw(article.content)
+  %hr/
