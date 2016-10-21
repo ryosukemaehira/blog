@@ -1,0 +1,9 @@
+.container
+  %article
+    .article_header
+      %h1.article_header__title
+        = @article.title
+        %span.article_header__date
+          = @article.created_at.strftime("%Y年%m月%d日")
+    .article_content
+      = simple_format(@article.content)

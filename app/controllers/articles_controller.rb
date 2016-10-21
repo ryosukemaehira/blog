@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 
   before_filter :basic_auth, only: [:new]
   def index
-    @articles = Article.all
+    @articles = Article.order(created_at: "DESC")
   end
 
   def new
