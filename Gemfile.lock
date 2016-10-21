@@ -41,7 +41,6 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (9.0.6)
-    charlock_holmes (0.7.3)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -51,7 +50,6 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
-    crass (1.0.2)
     debug_inspector (0.0.2)
     dotenv (2.1.1)
     dotenv-rails (2.1.1)
@@ -60,17 +58,9 @@ GEM
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
-    escape_utils (1.1.0)
     execjs (2.7.0)
-    gemoji (2.1.0)
-    github-linguist (4.7.3)
-      charlock_holmes (~> 0.7.3)
-      escape_utils (~> 1.1.0)
-      mime-types (>= 1.19)
-      rugged (>= 0.23.0b)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    greenmat (3.2.2.1)
     haml (4.0.7)
       tilt
     haml-rails (0.9.0)
@@ -79,9 +69,6 @@ GEM
       haml (>= 4.0.6, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
-    html-pipeline (2.2.2)
-      activesupport (>= 2, < 5)
-      nokogiri (>= 1.4)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -100,7 +87,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mem (0.1.5)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -111,26 +97,12 @@ GEM
     mysql2 (0.4.4)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-    nokogumbo (1.4.7)
-      nokogiri
-    posix-spawn (0.3.11)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
-    qiita-markdown (0.11.2)
-      gemoji
-      github-linguist (~> 4.0)
-      greenmat (>= 3.2.0.2, < 4)
-      html-pipeline (~> 2.0)
-      mem
-      pygments.rb
-      sanitize
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -163,11 +135,6 @@ GEM
       json (~> 1.4)
     ruby_parser (3.8.2)
       sexp_processor (~> 4.1)
-    rugged (0.24.0b11)
-    sanitize (4.0.1)
-      crass (~> 1.0.2)
-      nokogiri (>= 1.4.4)
-      nokogumbo (~> 1.4.1)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -204,7 +171,6 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -219,7 +185,6 @@ DEPENDENCIES
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
   pry-rails
-  qiita-markdown
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

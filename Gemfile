@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pry-rails'
 gem 'erb2haml'
 gem 'haml-rails'
-gem 'qiita-markdown'
 gem 'dotenv-rails'
 
 # Use ActiveModel has_secure_password
