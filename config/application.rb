@@ -30,7 +30,6 @@ module Blog
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.i18n.default_locale = :ja
     config.generators do |g|
      g.test_framework       false
      g.helper               false
