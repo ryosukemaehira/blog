@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 
   before_filter :basic_auth, only: [:new]
   def index
-    @articles = Article.all
+    @articles = Article.order(created_at: "DESC")
   end
 
   def new
@@ -12,6 +12,10 @@ class ArticlesController < ApplicationController
   def create
     Article.create(article_params)
     redirect_to '/'
+  end
+
+  def show
+    @article = Article.find(params[:id])
   end
 
   private

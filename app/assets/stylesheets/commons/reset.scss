@@ -13,12 +13,16 @@ time, mark, audio, video, button, input {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 10px;
   font: inherit;
   color: $text_color;
   vertical-align: baseline;
   text-decoration: none;
 }
+
+html { font-size: 62.5%; }
+body { font-size: 1.4rem; }
+
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

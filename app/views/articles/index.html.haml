@@ -1,7 +1,11 @@
-%h1 まげぶろぐ
-= link_to "new", new_article_path
-- @articles.each do |article|
-  %h1
-    = article.title
-  = raw(article.content)
-  %hr/
+
+.contents.container
+  -# = link_to "new", new_article_path
+  - @articles.each do |article|
+    .article-card
+      = link_to article_path(article) do
+        %h1.article-card__title
+          = article.title
+        %span.article-card__date
+          = article.created_at.strftime("%Y年%m月%d日")
+

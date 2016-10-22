@@ -1,0 +1,9 @@
+header {
+  height: $hedaer_height;
+  border-bottom: 1px solid $border_color;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  line-height: $hedaer_height;
+}

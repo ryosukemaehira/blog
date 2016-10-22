@@ -1,3 +1,5 @@
+/* new */
+
 #title-result {
   height: 20px;
   border: 1px solid $main_color;
@@ -8,8 +10,34 @@
   border: 1px solid $main_color;
 }
 
-.hoge {
-  display: block;
-  height: 20px;
-  padding: 20px;
+/* index */
+
+.article-card {
+  padding-top: $space_normal;
+  padding-bottom: $space_normal;
+  &__title {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+  }
+  &__date {
+    color: $text_color_bright;
+    font-size: 1.2rem;
+  }
+}
+
+/* show */
+
+.article_header {
+  padding-top: $space_wide;
+  padding-bottom: $space_wide;
+  border-bottom: 1px solid $border_color;
+  margin-bottom: $space_wide;
+  &__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+  &__date {
+    color: $text_color_bright;
+    font-size: 1.2rem;
+  }
 }
