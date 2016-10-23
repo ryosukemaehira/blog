@@ -15,9 +15,13 @@
 .article-card {
   padding-top: $space_normal;
   padding-bottom: $space_normal;
+  &__category {
+    color: $text_color_bright;
+  }
   &__title {
     margin-right: 2rem;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
+    font-weight: bold;
   }
   &__date {
     color: $text_color_bright;
