@@ -2,8 +2,7 @@
   -# = link_to "new", new_article_path
   - @articles.each do |article|
     .article-card
-      %p.article-card__category
-        = article.category.name
+      = link_to article.category.name, category_path(article.category), class: "article-card__category"
       = link_to article_path(article) do
         %h1.article-card__title
           = article.title

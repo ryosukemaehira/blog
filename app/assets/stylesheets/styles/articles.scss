@@ -36,6 +36,9 @@
   padding-bottom: $space_wide;
   border-bottom: 1px solid $border_color;
   margin-bottom: $space_wide;
+  &__category {
+    color: $text_color_bright;
+  }
   &__title {
     font-size: 3.2rem;
     font-weight: bold;
