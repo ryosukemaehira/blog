@@ -1,0 +1,7 @@
+.container
+  %h1
+    = @category.name
+    に関する記事の一覧
+  - @category.articles.each do |article|
+    %p
+      = link_to article.title, article_path(article)

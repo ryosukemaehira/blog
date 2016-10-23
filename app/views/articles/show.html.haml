@@ -1,6 +1,8 @@
 .container
   %article
     .article_header
+      %p.article_header__category
+        = link_to @article.category.name, category_path(@article.category), class: "article-card__category"
       %h1.article_header__title
         = @article.title
         %span.article_header__date
