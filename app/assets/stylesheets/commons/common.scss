@@ -1,5 +1,11 @@
+html {
+  min-height: 100vh;
+  position: relative;
+}
+
 body {
   letter-spacing: 0.25rem;
+  margin-bottom: $footer_height + $space_normal;
 }
 
 .contents {
