@@ -1,10 +1,13 @@
 .container
-  %input{:type => "text", class: "hoge", id: 'title'}/
-  -# %input{:type => "text", class: "hoge", id: 'editor'}/
-  %textarea{:name => "asd", :cols => "30", :rows => "10", class: 'hoge', id: 'editor'}
-
-= form_for @article do |f|
-  = f.text_area :title ,id: 'title-result'
-  = f.collection_select :category_id, Category.all, :id, :name, prompt: "カテゴリー選択"
-  = f.text_area :content ,id: 'result'
-  = f.submit
+  .article-form-container
+    .col-sm-6
+      %input{:type => "text", class: "title-form input-form", id: 'title'}/
+      -# %input{:type => "text", class: "hoge", id: 'editor'}/
+      %textarea{:name => "asd", :cols => "30", :rows => "10", class: 'content-form input-form', id: 'editor'}
+    .col-sm-6
+      = form_for @article do |f|
+        = f.text_area :title ,id: 'title-result', class: "title-form preview-form"
+        = f.text_area :content ,id: 'result', class: 'content-form preview-form'
+        .input-button-container
+          = f.collection_select :category_id, Category.all, :id, :name, prompt: "カテゴリー選択"
+          = f.submit
