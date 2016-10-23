@@ -1,5 +1,14 @@
 .container
+  .page-header
+    %h1.page-header__title
+      今まで作ったもの
   .works-container
-    .work.col-sm-6.col-md-4.col-lg-3
-      .work-thumbnail
+    %section.works-projects
+      %h2.section-title プロジェクト
+      = render partial: "works/project", locals: { title: "Thanks", type: "WEB", role: "デザイン / フロントエンド", description: "感謝を伝えるグループ用アプリ", image: "thanks_img.png" }
+      = render partial: "works/project", locals: { title: "TechDRILL", type: "WEB", role: "デザイン / フロントエンド", description: "実践型プログラミング問題集", image: "techdrill_img.png" }
+      = render partial: "works/project", locals: { title: "FPATPLAT", type: "iOS", role: "デザイン / サーバーサイド", description: "旅人マッチングサービス", image: "flatplat_img.png" }
+      = render partial: "works/project", locals: { title: "ツッコミ.me", type: "iOS", role: "デザイン", description: "名ツッコミ シェアサービス", image: "tsukkomi_img.png" }
+      = render partial: "works/project", locals: { title: "ひとたび", type: "WEB", role: "デザイン / フロントエンド", description: "ひとたびチームサイト", image: "hitotabi_img.png" }
+    %section.works-bannar
 
