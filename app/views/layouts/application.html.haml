@@ -8,10 +8,15 @@
     = csrf_meta_tags
   %body
     %header
-      .navbar
-        .container
-          = link_to root_path do
-            %h1 まげぶろ
+      .navbar.container
+        .navbat-header
+          .navbar-header__left.col-xs-6
+            .row
+              = link_to root_path do
+                %h1 まげぶろ
+          .navbar-header__right.col-xs-6
+            .row
+              = link_to "ポートフォリオ", works_path, class: "link"
     = yield
     %footer
       .container
