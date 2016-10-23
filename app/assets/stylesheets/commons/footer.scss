@@ -6,6 +6,7 @@ footer {
   .footer-left {
     p.copyright {
       line-height: $footer_height;
+      color: $text_color_bright;
     }
   }
 }
