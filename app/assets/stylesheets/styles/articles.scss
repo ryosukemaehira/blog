@@ -1,13 +1,29 @@
 /* new */
 
 #title-result {
-  height: 20px;
+  /*height: 20px;*/
   border: 1px solid $main_color;
 }
 
 #result {
-  height: 200px;
+  /*height: 200px;*/
   border: 1px solid $main_color;
+}
+
+.preview-form, .input-form {
+  width: 100%;
+}
+
+.title-form {
+  height: 20px;
+}
+
+.content-form {
+  height: calc(100vh - 200px);
+}
+
+.input-button-container {
+  height: 20px;
 }
 
 /* index */
