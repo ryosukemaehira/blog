@@ -12,6 +12,7 @@ header {
 .navbar-header {
   &__right .link {
     float: right;
+    margin-left: 20px;
     line-height: $header_height;
   }
 }
