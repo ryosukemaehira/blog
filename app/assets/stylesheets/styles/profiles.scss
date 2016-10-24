@@ -1,0 +1,32 @@
+.profile {
+  &__text-info {
+    margin-left: 20px;
+  }
+  &__thumbnail img {
+    width: 100%;
+  }
+  &__label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: -20px;
+    margin-bottom: 0.3rem;
+  }
+  &__name {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-left: -20px;
+    &__phonetics {
+      color: $text_color_bright;
+      font-size: 1.2rem;
+    }
+  }
+  &__text {
+    font-size: 1.4rem;
+  }
+  &__skills--small {
+    font-size: 1.4rem;
+  }
+}
+

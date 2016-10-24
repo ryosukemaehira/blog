@@ -2,16 +2,23 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     %title Blog
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
     %header
-      .navbar
-        .container
-          = link_to root_path do
-            %h1 まげぶろ
+      .navbar.container
+        .navbat-header
+          .navbar-header__left.col-xs-6
+            .row
+              = link_to root_path do
+                %h1 まげぶろ
+          .navbar-header__right.col-xs-6
+            .row
+              = link_to "ポートフォリオ", works_path, class: "link"
+              = link_to "自己紹介", profiles_path, class: "link"
     = yield
     %footer
       .container

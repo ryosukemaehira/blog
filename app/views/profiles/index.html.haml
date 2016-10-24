@@ -1,0 +1,32 @@
+.profile.container
+  .page-header
+    %h1.page-header__title
+      このサイトの中の人
+  .profile-container
+    -# .profile__thumbnail.col-sm-2
+    -#   = image_tag image_url('maehira.png')
+    .profile__text-info
+      %h2.profile__name
+        前平 亮祐
+        %span.profile__name__phonetics
+          まえひら りょうすけ
+      %p.profile__text
+        デザイナー / フロントエンドエンジニア
+        %br/
+        = link_to "TECH::CAMP", 'https://tech-camp.in/'
+        でデザイメンターとして働きながら、フリーランスでデザインの仕事をしています。
+        = link_to "ポードフォリオページ", works_path
+        から過去の制作を見ていただけます。
+      %label{for: "", class: "profile__label"}
+        skills
+      %p.profile__skills
+        %span.profile__skills--small
+          HTML5 / CSS3 / Javascript / Ruby / Ruby on Rails
+          %br/
+          illustrator(CC2015) / photoshop / Sketch.app /
+          %br/
+          English / French / Spanish
+      %label{for: "", class: "profile__label"}
+        hobbies
+      %p.profile__skills
+        旅 / 料理 / 草野球 / 日本酒 / 古着

@@ -1,10 +1,18 @@
 header {
-  height: $hedaer_height;
+  height: $header_height;
   border-bottom: 1px solid $border_color;
 }
 
 .navbar h1 {
   font-size: 1.8rem;
   font-weight: bold;
-  line-height: $hedaer_height;
+  line-height: $header_height;
+}
+
+.navbar-header {
+  &__right .link {
+    float: right;
+    margin-left: 20px;
+    line-height: $header_height;
+  }
 }
