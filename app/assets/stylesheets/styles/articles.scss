@@ -47,6 +47,10 @@
 
 /* show */
 
+article {
+  padding-bottom: $space_wide * 2;
+}
+
 .article_header {
   padding-top: $space_wide;
   padding-bottom: $space_wide;
@@ -64,3 +68,4 @@
     font-size: 1.2rem;
   }
 }
+
