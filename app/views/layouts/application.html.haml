@@ -17,8 +17,17 @@
                 %h1 まげぶろ
           .navbar-header__right.col-xs-6
             .row
-              = link_to "ポートフォリオ", works_path, class: "link"
-              = link_to "自己紹介", profiles_path, class: "link"
+              #bs-example-navbar-collapse-1.collapse.navbar-collapse.link
+                %ul.nav.navbar-nav
+                  %li.dropdown
+                    %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                      メニュー
+                      %span.caret
+                    %ul.dropdown-menu
+                      %li
+                        = link_to "ポートフォリオ", works_path
+                      %li
+                        = link_to "自己紹介", profiles_path
     = yield
     %footer
       .container
