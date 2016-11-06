@@ -1,13 +1,12 @@
 .container
   .article-form-container
     .col-sm-6
-      %input{:type => "text", class: "title-form input-form", id: 'title'}/
-      -# %input{:type => "text", class: "hoge", id: 'editor'}/
-      %textarea{:name => "asd", :cols => "30", :rows => "10", class: 'content-form input-form', id: 'editor'}
-    .col-sm-6
       = form_for @article do |f|
-        = f.text_area :title ,id: 'title-result', class: "title-form preview-form"
-        = f.text_area :content ,id: 'result', class: 'content-form preview-form'
+        = f.text_area :title, class: "title-form preview-form"
+        = f.text_area :content, cols: "30", rows: "10", class: "content-form input-form", id: 'js-markdown-input'
         .input-button-container
           = f.collection_select :category_id, Category.all, :id, :name, prompt: "カテゴリー選択"
           = f.submit
+    .col-sm-6
+      .article_content-preview
+        .content-form.preview-form#js-markdown-preview
