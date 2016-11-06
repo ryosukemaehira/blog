@@ -5,10 +5,6 @@
   .works-container
     %section.works-projects
       %h2.section-title プロジェクト
-      = render partial: "works/project", locals: { title: "Thanks", type: "WEB", role: "デザイン / フロントエンド", description: "感謝を伝えるグループ用アプリ", image: "thanks_img.png" }
-      = render partial: "works/project", locals: { title: "TechDRILL", type: "WEB", role: "デザイン / フロントエンド", description: "実践型プログラミング問題集", image: "techdrill_img.png" }
-      = render partial: "works/project", locals: { title: "FPATPLAT", type: "iOS", role: "デザイン / サーバーサイド", description: "旅人マッチングサービス", image: "flatplat_img.png" }
-      = render partial: "works/project", locals: { title: "ツッコミ.me", type: "iOS", role: "デザイン", description: "名ツッコミ シェアサービス", image: "tsukkomi_img.png" }
-      = render partial: "works/project", locals: { title: "ひとたび", type: "WEB", role: "デザイン / フロントエンド", description: "ひとたびチームサイト", image: "hitotabi_img.png" }
+      - @works.each do |work|
+        = render partial: "works/project", locals: { work: work }
     %section.works-bannar
-

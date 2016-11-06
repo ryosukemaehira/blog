@@ -1,0 +1,4 @@
+.container
+  = image_tag image_url(@work.work_images.main.first.content)
+  - @work.work_images.sub.each do |sub|
+    = image_tag image_url(sub.content)

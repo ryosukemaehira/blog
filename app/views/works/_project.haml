@@ -1,12 +1,11 @@
-.work.col-sm-6.col-md-4
-  = image_tag image_url(image), class: "work__thumbnail"
-  .work__caption
-    %h3.work__title
-      = title
-    %p.type
-      = type
-    %h3.work__role
-      = role
-    %p.description
-      = description
+= link_to work_path(work) do
+  .work.col-sm-6.col-md-4
+    = image_tag image_url(work.work_images.first.content.thumb), class: "work__thumbnail"
+    .work__caption
+      %h3.work__title
+        = work.title
+      %p.type
+      %h3.work__role
+      %p.description
+        = work.description
 
