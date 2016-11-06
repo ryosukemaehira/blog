@@ -3,6 +3,11 @@ article {
 }
 
 .article_content, .article_content-preview {
+
+  .title-form, .content-form{
+    overflow: scroll;
+  }
+
   h1 {
     font-size: 2.4rem;
     line-height: 3em;
