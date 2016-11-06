@@ -1,0 +1,33 @@
+.container
+  = form_for(@work) do |f|
+    タイトル
+    = f.text_field :title, style: "width: 100%;"
+    %br/
+    仕事
+    = f.text_field :role, style: "width: 100%;"
+    %br/
+    説明
+    = f.text_field :description, style: "width: 100%;"
+    %br/
+    詳細
+    = f.text_area :detail, style: "width: 100%;"
+    %br/
+    画像メイン
+    = f.fields_for :work_images do |image|
+      = image.file_field :content
+      = image.hidden_field :state, value: "main"
+    %br/
+    画像サブたち
+    = f.fields_for :work_images do |image|
+      = image.file_field :content
+      = image.hidden_field :state, value: "sub"
+    %br/
+    = f.fields_for :work_images do |image|
+      = image.file_field :content
+      = image.hidden_field :state, value: "sub"
+    %br/
+    = f.fields_for :work_images do |image|
+      = image.file_field :content
+      = image.hidden_field :state, value: "sub"
+    %br/
+    = f.submit
