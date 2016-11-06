@@ -1,13 +1,9 @@
 $(document).on('turbolinks:load', function(){
   $(function(){
-    $('#title').keyup(function(){
-      var text = $(this).val();
-      $('#title-result').html(text);
-    });
-    $('#editor').keyup(function(){
+    $('#js-markdown-input').keyup(function(){
       var md = $(this).val();
       var html = marked(md);
-      $('#result').html(html);
+      $('#js-markdown-preview').html(html);
     });
   });
 })
