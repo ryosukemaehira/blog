@@ -20,7 +20,8 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :content, :category_id)
+    rendered_content = RDiscount.new(params[:article][:content].to_s, :filter_html).to_html
+    params.require(:article).permit(:title, :content, :category_id).merge(rendered_content: rendered_content)
   end
 
   def basic_auth
