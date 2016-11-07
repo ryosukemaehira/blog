@@ -3,10 +3,27 @@ footer {
   bottom: 0;
   width: 100%;
   height: $footer_height;
+  background-color: $bg_color;
   .footer-left {
     p.copyright {
+      font-size: 1.1rem;
+      color: #FFF;
       line-height: $footer_height;
       color: $text_color_bright;
+    }
+  }
+  .footer-right {
+    .triangle {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      width: 0;
+  height: 0;
+  border-bottom: 80px solid $header_color;
+  border-right: 300px solid $header_color;
+  border-top: 80px solid transparent;
+  border-left: 300px solid transparent;
     }
   }
 }

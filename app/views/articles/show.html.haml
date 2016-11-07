@@ -1,11 +1,12 @@
-.container
-  %article
-    .article_header
-      %p.article_header__category
-        = link_to @article.category.name, category_path(@article.category), class: "article-card__category"
-      %h1.article_header__title
-        = @article.title
-        %span.article_header__date
-          = @article.created_at.strftime("%Y年%m月%d日")
-    .article_content
-      = simple_format(@article.rendered_content)
+.bg-white
+  .container
+    %article
+      .article_header
+        %p.article_header__category
+          = link_to @article.category.name, category_path(@article.category), class: "article-card__category"
+        %h1.article_header__title
+          = @article.title
+          %span.article_header__date
+            = @article.created_at.strftime("%Y年%m月%d日")
+      .article_content
+        = simple_format(@article.rendered_content)

@@ -1,11 +1,13 @@
-.contents.container
-  -# = link_to "new", new_article_path
-  - @articles.each do |article|
-    .article-card
-      = link_to article.category.name, category_path(article.category), class: "article-card__category"
-      = link_to article_path(article) do
-        %h1.article-card__title
-          = article.title
-        %span.article-card__date
-          = article.created_at.strftime("%Y年%m月%d日")
+.articles
+  .inner
+    .contents.container
+      -# = link_to "new", new_article_path
+      - @articles.each do |article|
+        .article-card
+          = link_to article.category.name, category_path(article.category), class: "article-card__category"
+          = link_to article_path(article) do
+            %h1.article-card__title
+              = article.title
+            %span.article-card__date
+              = article.created_at.strftime("%Y年%m月%d日")
 

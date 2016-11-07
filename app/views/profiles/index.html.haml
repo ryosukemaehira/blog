@@ -1,32 +1,25 @@
-.profile.container
-  .page-header
-    %h1.page-header__title
-      このサイトの中の人
-  .profile-container
-    -# .profile__thumbnail.col-sm-2
-    -#   = image_tag image_url('maehira.png')
-    .profile__text-info
-      %h2.profile__name
-        前平 亮祐
-        %span.profile__name__phonetics
-          まえひら りょうすけ
-      %p.profile__text
-        デザイナー / フロントエンドエンジニア
-        %br/
-        = link_to "TECH::CAMP", 'https://tech-camp.in/'
-        でデザイメンターとして働きながら、フリーランスでデザインの仕事をしています。
-        = link_to "ポードフォリオページ", works_path
-        から過去の制作を見ていただけます。
-      %label{for: "", class: "profile__label"}
-        skills
-      %p.profile__skills
-        %span.profile__skills--small
-          HTML5 / CSS3 / Javascript / Ruby / Ruby on Rails
-          %br/
-          illustrator(CC2015) / photoshop / Sketch.app /
-          %br/
-          English / French / Spanish
-      %label{for: "", class: "profile__label"}
-        hobbies
-      %p.profile__skills
-        旅 / 料理 / 草野球 / 日本酒 / 古着
+.container
+  .profile
+    .clearfix
+      .profile__name-job.col-sm-4
+        .row
+          %h1.profile__name
+            Ryosuke Maehira
+          %p.profile__job
+            デザイナー / フロントエンドエンジニア
+      .col-sm-8
+        .profile__image
+          = image_tag image_url('profile.jpg'), class: "img-responsive"
+    %p.profile__greeting
+      どこでも行きていける最強に人間を目指し、大学生活の大半を旅に捧げる。
+      %br/
+      ひとしきり心身を鍛え、あとは社会的に生き抜く力が必要だと感じ、エンジニアを志す。
+      %br/
+      現在は株式会社divにて、TECH::CAMPのデザイナーとして活動しながら、渋谷界隈でデザイナーとして活動している。
+      %br/
+      趣味は、旅と料理と古着と風呂敷。
+    .profile__contacts
+      = link_to "Twitter@ryosuke-hima", "https://twitter.com/tabi_ryosuke", class: "profile__contacts--twitter", target: "blank"
+      %p.profile__contacts--email
+        Email: wwwandering.jp@gmail.com
+

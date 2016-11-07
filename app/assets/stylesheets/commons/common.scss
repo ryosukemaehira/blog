@@ -6,21 +6,27 @@ html {
 body {
   letter-spacing: 0.25rem;
   margin-bottom: $footer_height + $space_normal;
+  background-color: $bg_color;
 }
 
 .page-header {
   padding-top: $space_wide;
   padding-bottom: $space_wide;
-  border-bottom: 1px solid $border_color;
-  margin-bottom: $space_wide;
+  background-color: $header_color;
+  /*margin-bottom: $space_wide;*/
   &__title {
     font-size: 3.2rem;
     font-weight: bold;
+    color: #FFF;
   }
 }
 
 .contents {
   margin-top: $space_normal;
+}
+
+.bg-white {
+  background-color: #FFF;
 }
 
 .text-white {
@@ -39,6 +45,10 @@ body {
   clear: both;
 }
 
+.img-responsive {
+  width: 100%;
+}
+
 input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
   box-shadow: 0 0 3px lighten($main_color, 10%);
@@ -54,3 +64,22 @@ input, textarea {
           box-sizing: border-box;
 }
 
+img {
+  vertical-align:bottom;
+}
+
+.block-sm {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .block-sm {
+    display: block;
+  }
+}

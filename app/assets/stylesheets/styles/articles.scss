@@ -28,6 +28,13 @@
 
 /* index */
 
+.articles {
+  background-color: #FFF;
+  .inner {
+    padding-top: 20px;
+  }
+}
+
 .article-card {
   padding-top: $space_normal;
   padding-bottom: $space_normal;
@@ -45,6 +52,9 @@
   }
 }
 
+.articles.contents:first-child {
+  padding-top: 30px;
+}
 /* show */
 
 article {
