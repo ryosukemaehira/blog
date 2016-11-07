@@ -1,12 +1,12 @@
 html {
   min-height: 100vh;
   position: relative;
-  background-color: $bg_color;
 }
 
 body {
   letter-spacing: 0.25rem;
   margin-bottom: $footer_height + $space_normal;
+  background-color: $bg_color;
 }
 
 .page-header {
@@ -23,6 +23,10 @@ body {
 
 .contents {
   margin-top: $space_normal;
+}
+
+.bg-white {
+  background-color: #FFF;
 }
 
 .text-white {
@@ -62,4 +66,20 @@ input, textarea {
 
 img {
   vertical-align:bottom;
+}
+
+.block-sm {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .block-sm {
+    display: block;
+  }
 }

@@ -58,6 +58,7 @@
     text-align: center;
     left: -45px;
     bottom: 20%;
+    color: #FFF;
     /* Rectangle: */
     &:hover {
       background: #FF9D1C;
@@ -80,7 +81,6 @@
 
 .work-indivisual {
   position: relative;
-  margin-top: 10px;
   &__text-info {
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */

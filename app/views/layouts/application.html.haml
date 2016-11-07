@@ -14,10 +14,10 @@
           .navbar-header__left.col-xs-6
             .row
               = link_to root_path do
-                %h1 まげぶろ
+                %h1 Rio de japon
           .navbar-header__right.col-xs-6
             .row
-              #bs-example-navbar-collapse-1.collapse.navbar-collapse.link
+              #bs-example-navbar-collapse-1.collapse.navbar-collapse.link.block-sm
                 %ul.nav.navbar-nav
                   %li.dropdown
                     %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
@@ -27,9 +27,16 @@
                       %li
                         = link_to "ポートフォリオ", works_path
                       %li
-                        = link_to "自己紹介", profiles_path
+                        = link_to "中の人", profiles_path
+              = link_to "ポートフォリオ", works_path, class: "hide-sm link"
+              = link_to "中の人", profiles_path, class: "hide-sm link"
     = yield
     %footer
       .container
-        .footer-left
-          %p.copyright Copyright (c) 2016 Ryosuke Maehira
+        .row
+          .footer-left.col-sm-6
+            %p.copyright Copyright (c) 2016 Ryosuke Maehira
+          .footer-right.col-sm-6
+            - if params[:controller] == "profiles"
+              .triangle.hide-sm
+
