@@ -20,6 +20,6 @@ class WorksController < ApplicationController
   private
 
   def create_params
-    params.require(:work).permit(:title, :description, :detail, work_images_attributes: [:id, :content, :state])
+    params.require(:work).permit(:title, :role, :description, :detail, work_images_attributes: [:id, :content, :state])
   end
 end

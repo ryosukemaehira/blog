@@ -3,6 +3,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: $footer_height;
+  background-color: $bg_color;
   .footer-left {
     p.copyright {
       line-height: $footer_height;

@@ -1,4 +1,18 @@
-.container
-  = image_tag image_url(@work.work_images.main.first.content)
-  - @work.work_images.sub.each do |sub|
-    = image_tag image_url(sub.content)
+.work-indivisual
+  .clearfix
+    .col-sx-12
+      .row
+        = image_tag image_url(@work.work_images.main.first.content), class: "work-indivisual__image img-responsive"
+    .work-indivisual__text-info
+      .container
+        .col-sm-8.col-md-5.col-sm-offset-1
+          .row
+            %p.work-indivisual__title
+              = @work.title
+            %p.work-indivisual__role
+              = @work.role
+            %hr/
+            %p.work-indivisual__description
+              = @work.description
+            %p.work-indivisual__detail
+              = @work.detail

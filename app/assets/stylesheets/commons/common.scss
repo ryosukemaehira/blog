@@ -1,6 +1,7 @@
 html {
   min-height: 100vh;
   position: relative;
+  background-color: $bg_color;
 }
 
 body {
@@ -11,11 +12,12 @@ body {
 .page-header {
   padding-top: $space_wide;
   padding-bottom: $space_wide;
-  border-bottom: 1px solid $border_color;
-  margin-bottom: $space_wide;
+  background-color: $header_color;
+  /*margin-bottom: $space_wide;*/
   &__title {
     font-size: 3.2rem;
     font-weight: bold;
+    color: #FFF;
   }
 }
 
@@ -39,6 +41,10 @@ body {
   clear: both;
 }
 
+.img-responsive {
+  width: 100%;
+}
+
 input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
   box-shadow: 0 0 3px lighten($main_color, 10%);
@@ -54,3 +60,6 @@ input, textarea {
           box-sizing: border-box;
 }
 
+img {
+  vertical-align:bottom;
+}

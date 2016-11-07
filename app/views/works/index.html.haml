@@ -1,10 +1,9 @@
-.container
-  .page-header
+.page-header
+  .container
     %h1.page-header__title
       今まで作ったもの
-  .works-container
-    %section.works-projects
-      %h2.section-title プロジェクト
-      - @works.each do |work|
-        = render partial: "works/project", locals: { work: work }
-    %section.works-bannar
+      -# %span.sub-title
+      -#   portfolio
+.works-container.clearfix
+  - @works.each do |work|
+    = render partial: "works/project", locals: { work: work }
