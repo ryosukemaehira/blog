@@ -2,7 +2,7 @@
   .clearfix
     .col-sx-12
       .row
-        = image_tag image_url(@work.work_images.main.first.content), class: "work-indivisual__image img-responsive"
+        = image_tag @work.work_images.main.first.content, class: "work-indivisual__image img-responsive"
     .work-indivisual__text-info
       .container
         .col-sm-8.col-md-5.col-sm-offset-1
