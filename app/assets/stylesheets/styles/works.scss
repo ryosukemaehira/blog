@@ -32,6 +32,7 @@
             animation: fadein .5s;
     transition-property: padding-left;
     transition-duration: .9s;
+    overflow: scroll;
   }
   &__title {
     font-weight: bold;

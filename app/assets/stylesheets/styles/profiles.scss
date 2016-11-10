@@ -109,3 +109,12 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media (max-width: 768px) {
+  .profile {
+    padding-top: $space_wide;
+    &__image {
+      margin-bottom: $space_normal;
+    }
+  }
+}
