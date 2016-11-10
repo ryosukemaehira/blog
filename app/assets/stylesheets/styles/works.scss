@@ -38,9 +38,13 @@
     position: relative;
     display: inline-block;
     color: #FFF;
+    font-size: 2.8rem;
+    /*margin-bottom: $space_narrow;*/
   }
   &__role {
     color: #FFF;
+    font-size: 1.2rem;
+    margin-bottom: $space_normal;
   }
   &__description {
     color: #FFF;
