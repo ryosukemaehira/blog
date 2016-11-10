@@ -21,3 +21,11 @@ header {
     color: #FFF;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-header {
+    &__right ul.dropdown-menu a{
+      color: $text_color;
+    }
+  }
+}
