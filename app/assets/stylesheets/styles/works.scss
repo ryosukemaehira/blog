@@ -32,7 +32,6 @@
             animation: fadein .5s;
     transition-property: padding-left;
     transition-duration: .9s;
-    overflow: scroll;
   }
   &__title {
     font-weight: bold;
@@ -170,8 +169,8 @@
   &:hover {
     .work__caption {
       display: block;
-      padding-left: $space_normal;
-      padding-right: $space_normal;
+      padding-left: $space_narrow;
+      padding-right: $space_narrow;
     }
   }
 
@@ -182,8 +181,8 @@
     width: 50%;
     height: 100%;
     background-color: rgba(77, 139, 174, 0.75);
-    padding-top: $space_normal;
-    padding-bottom: $space_normal;
+    padding-top: $space_narrow;
+    padding-bottom: $space_narrow;
     display: none;
     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .5s; /* Firefox < 16 */
@@ -198,15 +197,18 @@
     position: relative;
     display: inline-block;
     color: #FFF;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin-bottom: $space_narrow;
   }
   &__role {
     color: #FFF;
     font-size: 1.2rem;
+    line-height: 1.4;
     margin-bottom: $space_narrow;
   }
   &__description {
+    font-size: 1.2rem;
+    line-height: 1.4;
     color: #FFF;
   }
   &__detail-link {
@@ -215,12 +217,12 @@
     background-color: orange;
     /*-webkit-border-radius: 15px;
             border-radius: 15px;*/
-    height: 30px;
-    line-height: 30px;
+    height: 24px;
+    line-height: 24px;
     width: 90px;
     color: #FFF;
     text-align: center;
-    left: $space_normal;
+    left: $space_narrow;
     bottom: $space_narrow;
     color: #FFF;
     /* Rectangle: */
