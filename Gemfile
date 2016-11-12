@@ -22,6 +22,7 @@ gem 'rdiscount'
 
 # 画像アップロード
 gem 'carrierwave'
+gem 'fog'
 gem 'rmagick', require: 'RMagick'
 
 group :development, :test do
